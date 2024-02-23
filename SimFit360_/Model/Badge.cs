@@ -13,9 +13,9 @@ namespace SimFit360.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime AchievedAt { get; set; }
-        public int? MaxProgress { get; set; }
-        public int Progress { get; set; }
+        public DateTime? AchievedAt { get; set; }
+        public int MaxProgress { get; set; }
+        public int? Progress { get; set; }
         public int? Tier { get; set; }
     }
 }
