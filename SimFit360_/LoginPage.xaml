@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="SimFit360_.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimFit360_"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="0 50 0 0" Grid.Row="0">
+            <!--<Image Source="\Assets\Logo6_groot.png" Name="ImageViewer1" Height="200" Width="200" />-->
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <TextBox Width="200" HorizontalAlignment="Center" x:Name="Name" Margin="0 50 0 10" PlaceholderText="Vul hier je naam in" />
+            <PasswordBox Width="200" HorizontalAlignment="Center" x:Name="Password"  PlaceholderText="Password" />
+            <Button Width="200" HorizontalAlignment="Center" x:Name="loginButton" Margin="0 20 0 0" Style="{StaticResource ButtonStyle}" PointerEntered="loginButton_PointerEntered" Click="loginButton_Click" Content="Login"/>
+        </StackPanel>
+    </Grid>
+</Page>
