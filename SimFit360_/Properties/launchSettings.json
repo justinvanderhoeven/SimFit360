@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SimFit360_ (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SimFit360_ (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
