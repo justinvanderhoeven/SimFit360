@@ -44,15 +44,15 @@ namespace SimFit360.Model
                 });
 
             modelBuilder.Entity<Badge>().HasData(
-                   new Badge
-                   {
-                       Id = 1,
-                       Name = "De kikker",
-                       Description = "Ren 1000m op de loopband",
-                       AchievedAt = null,
-                       Tier = 1,
-                       MaxProgress = 1000,
-                       Progress = null,
+                new Badge
+                {
+                    Id = 1,
+                    Name = "De kikker",
+                    Description = "Ren 1000m op de loopband",
+                    AchievedAt = null,
+                    Tier = 1,
+                    MaxProgress = 1000,
+                    Progress = null,
                    });
 
             modelBuilder.Entity<Session>().HasData(
