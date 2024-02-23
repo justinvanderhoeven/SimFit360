@@ -8,7 +8,7 @@ using Windows.Devices.Pwm;
 
 namespace SimFit360.Model
 {
-    public class Badges
+    public class Badge
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -17,8 +17,6 @@ namespace SimFit360.Model
         public int? MaxProgress { get; set; }
         public int Progress { get; set; }
         public int? Tier { get; set; }
-
-        [InverseProperty(nameof(User.Id))]
-        public int UserId { get ; set; }
     }
 }
+
