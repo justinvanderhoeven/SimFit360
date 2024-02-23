@@ -13,7 +13,7 @@ namespace SimFit360.Model
         public int UserId { get; set; }
 
         [InverseProperty(nameof(SessionPart.Id))]
-        public string SessionPartId { get; set; }
+        public int SessionPartId { get; set; }
         public ICollection<SessionPart> SessionParts { get; set; }
     }
 }
