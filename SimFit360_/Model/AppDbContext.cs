@@ -40,6 +40,7 @@ namespace SimFit360.Model
                 {
                     Id = 6,
                     Name = "Fred",
+                    
                     Password = SecureHasher.Hash("1234"),
                 },
                 new User
@@ -139,32 +140,27 @@ namespace SimFit360.Model
                 new Session
                 {
                     Id = 1, 
-                    UserId = 1, 
-                    SessionPartId = 1,
+                    UserId = 1,
                 },
                 new Session
                 {
                     Id = 2,
                     UserId = 2,
-                    SessionPartId = 2,
                 },
                 new Session
                 {
                     Id = 3,
                     UserId = 3,
-                    SessionPartId = 3,
                 },
                 new Session
                 {
                     Id = 4,
                     UserId = 4,
-                    SessionPartId = 4,
                 },
                 new Session
                 {
                     Id = 5,
                     UserId = 5,
-                    SessionPartId = 5,
                 });
 
             modelBuilder.Entity<SessionPart>().HasData(
