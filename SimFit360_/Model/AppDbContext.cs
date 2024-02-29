@@ -142,26 +142,31 @@ namespace SimFit360.Model
                 {
                     Id = 1, 
                     UserId = 1,
+                    CreatedAt = DateTime.Now,
                 },
                 new Session
                 {
                     Id = 2,
                     UserId = 2,
+                    CreatedAt = DateTime.Now,
                 },
                 new Session
                 {
                     Id = 3,
                     UserId = 3,
+                    CreatedAt = DateTime.Now,
                 },
                 new Session
                 {
                     Id = 4,
                     UserId = 4,
+                    CreatedAt = DateTime.Now,
                 },
                 new Session
                 {
                     Id = 5,
                     UserId = 5,
+                    CreatedAt = DateTime.Now,
                 });
 
             modelBuilder.Entity<SessionPart>().HasData(
@@ -171,7 +176,6 @@ namespace SimFit360.Model
                     Time = 200,
                     DifficultyLevel = 1,
                     DistanceRan = 12, 
-                    CreatedAt = DateTime.Now,
                     SessionId = 1,
                 },
                 new SessionPart
@@ -180,7 +184,6 @@ namespace SimFit360.Model
                     Time = 200,
                     DifficultyLevel = 1,
                     DistanceRan = 12,
-                    CreatedAt = DateTime.Now,
                     SessionId = 2,
                 },
                 new SessionPart
@@ -189,7 +192,6 @@ namespace SimFit360.Model
                     Time = 200,
                     DifficultyLevel = 1,
                     DistanceRan = 12,
-                    CreatedAt = DateTime.Now,
                     SessionId = 3,
                 },
                 new SessionPart
@@ -198,7 +200,6 @@ namespace SimFit360.Model
                     Time = 200,
                     DifficultyLevel = 1,
                     DistanceRan = 12,
-                    CreatedAt = DateTime.Now,
                     SessionId = 4,
                 },
                 new SessionPart
@@ -207,7 +208,6 @@ namespace SimFit360.Model
                     Time = 200,
                     DifficultyLevel = 1,
                     DistanceRan = 12,
-                    CreatedAt = DateTime.Now,
                     SessionId = 5,
                 });
 
