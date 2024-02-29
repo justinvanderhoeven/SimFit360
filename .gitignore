@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/SimFit360_/App.config
+SimFit360_/App.config

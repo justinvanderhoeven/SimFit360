@@ -38,7 +38,7 @@ namespace SimFit360.Model
                 // Users (Sporter)
                 new User
                 {
-                    Id = 6,
+                    Id = 1,
                     Name = "Fred",
                     Password = SecureHasher.Hash("Fred"),
                 });
