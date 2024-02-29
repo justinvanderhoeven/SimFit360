@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimFit360_.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,9 +15,8 @@ namespace SimFit360.Model
         public string Name { get; set; }
         public string Password { get; set; }
 
-        [InverseProperty(nameof(Badge.Id))]
-        public int BadgeId { get; set; }
-        public List<SessionPart> SessionParts { get; set; }
-        public List<Badge> Badges { get; } = new(); 
+        public ICollection<Session> Sessions { get; set; }
+        public ICollection<UserBadge> UserBadges { get; set; }
+
     }
 }

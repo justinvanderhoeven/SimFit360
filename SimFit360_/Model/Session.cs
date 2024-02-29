@@ -12,6 +12,9 @@ namespace SimFit360.Model
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public List<SessionPart> SessionParts { get; } = new();
+
+        public User User { get; set; }
+        public ICollection<SessionPart> SessionParts { get; set;}
+        
     }
 }
