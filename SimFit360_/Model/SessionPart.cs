@@ -13,10 +13,9 @@ namespace SimFit360.Model
         public int Time { get; set; }
         public int DifficultyLevel { get; set; }
         public int DistanceRan {  get; set; }
-        public DateTime CreatedAt { get; set; }
-
-        [InverseProperty(nameof(Session.Id))]
+        public int Order { get; set; }
+        public int KcalBurned { get; set; }
         public int SessionId { get; set; }
-        public ICollection<User> Users { get; set; }
+        public Session Session { get; set; }
     }
 }
