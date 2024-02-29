@@ -16,6 +16,8 @@ namespace SimFit360.Model
         public string Password { get; set; }
 
         public ICollection<Session> Sessions { get; set; }
+
+        public ICollection<Badge> Badges { get; set; }
         public ICollection<UserBadge> UserBadges { get; set; }
 
     }
