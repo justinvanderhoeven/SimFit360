@@ -1,4 +1,4 @@
-﻿using SimFit360_.Model;
+using SimFit360_.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
