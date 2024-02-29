@@ -17,6 +17,7 @@ namespace SimFit360.Model
         public int MaxProgress { get; set; }
         public int? Progress { get; set; }
         public int? Tier { get; set; }
+      
     }
 }
 

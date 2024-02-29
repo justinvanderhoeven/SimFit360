@@ -16,7 +16,7 @@ namespace SimFit360.Model
 
         [InverseProperty(nameof(Badge.Id))]
         public int BadgeId { get; set; }
-        public ICollection<SessionPart> SessionParts { get; set; }
-        public ICollection<Badge> Badges { get; set;}
+        public List<SessionPart> SessionParts { get; set; }
+        public List<Badge> Badges { get; } = new(); 
     }
 }

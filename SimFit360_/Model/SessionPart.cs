@@ -17,6 +17,7 @@ namespace SimFit360.Model
 
         [InverseProperty(nameof(Session.Id))]
         public int SessionId { get; set; }
-        public ICollection<User> Users { get; set; }
+        public List<Session> Sessions { get; } = new();
+        public List<User> Users { get; } = new(); 
     }
 }
