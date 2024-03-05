@@ -54,8 +54,8 @@ namespace SimFit360_.Login
                     //Error message
                     ContentDialog wrongCredentialsDialog = new ContentDialog
                     {
-                        Title = "Login Failed",
-                        Content = "Please check your credentials.",
+                        Title = "Log in Mislukt",
+                        Content = "Check uw gegevens alstublieft.",
                         CloseButtonText = "Ok",
                         XamlRoot = this.XamlRoot,
                     };
