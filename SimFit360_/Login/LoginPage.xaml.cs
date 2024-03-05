@@ -32,13 +32,37 @@ namespace SimFit360_.Login
             this.InitializeComponent();
         }
 
-        internal void loginButton_Click(object sender, RoutedEventArgs e)
+        internal async void loginButton_Click(object sender, RoutedEventArgs e)
         {
-        }
+            string inputPassword = Password.Password;
 
-        private bool VerifyPassword(string inputPassword, string hashedPassword, string email)
-        {
-            return SecureHasher.Verify(inputPassword, hashedPassword);
+            using (var db = new AppDbContext())
+            {
+                var user = db.Users.FirstOrDefault(u => u.Password == inputPassword);
+
+                //Check if password is correct. 
+                if (user != null)
+                {
+                    User.LoggedInUser = user;
+                    Frame.Navigate(typeof(MainPageTest));
+                }
+                else
+                {
+                    //Removes input from input boxes.
+                    Password.Password = null;
+
+                    //Error message
+                    ContentDialog wrongCredentialsDialog = new ContentDialog
+                    {
+                        Title = "Login Failed",
+                        Content = "Please check your credentials.",
+                        CloseButtonText = "Ok",
+                        XamlRoot = this.XamlRoot,
+                    };
+
+                    ContentDialogResult result = await wrongCredentialsDialog.ShowAsync();
+                }
+            }
         }
     }
 }
