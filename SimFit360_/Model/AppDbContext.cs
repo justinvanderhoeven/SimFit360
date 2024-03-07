@@ -54,31 +54,31 @@ namespace SimFit360.Model
                 {
                     Id = 1,
                     Name = "Fred",
-                    Password = SecureHasher.Hash("1234"),
+                    Password = "1111",
                 },
                 new User
                 {
                     Id = 2,
                     Name = "Justin",
-                    Password = SecureHasher.Hash("1234"),
+                    Password = "1112",
                 },
                 new User
                 {
                     Id = 3,
                     Name = "Remon",
-                    Password = SecureHasher.Hash("1234"),
+                    Password = "1113",
                 },
                 new User
                 {
                     Id = 4,
                     Name = "Dani",
-                    Password = SecureHasher.Hash("1234"),
+                    Password = "1114",
                 },
                 new User
                 {
                     Id = 5,
                     Name = "Bob",
-                    Password = SecureHasher.Hash("1234"),
+                    Password = "1115",
                 });
 
             modelBuilder.Entity<Badge>().HasData(
