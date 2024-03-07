@@ -17,6 +17,7 @@
     <None Remove="BadgePage.xaml" />
     <None Remove="DashboardPage.xaml" />
     <None Remove="LoginPage.xaml" />
+    <None Remove="ProfilePage.xaml" />
     <None Remove="MainPageTest.xaml" />
   </ItemGroup>
 
@@ -52,6 +53,7 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ProfilePage.xaml">
     <Page Update="MainPageTest.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
