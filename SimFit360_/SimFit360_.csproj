@@ -63,7 +63,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="BadgePage.xaml">
+    <Page Update="BadgePage.xaml"/>
     <Page Update="ProfilePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
