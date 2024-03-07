@@ -13,6 +13,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Notifications;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -31,11 +32,13 @@ namespace SimFit360_
             using var db = new AppDbContext();
             db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
+
+            this.rootFrame.Navigate(typeof(ProfilePage));
         }
 
         private void myButton_Click(object sender, RoutedEventArgs e)
         {
-            myButton.Content = "Clicked";
+            
         }
     }
 }
