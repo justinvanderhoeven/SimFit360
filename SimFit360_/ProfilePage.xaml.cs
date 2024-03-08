@@ -27,15 +27,16 @@ namespace SimFit360_
     { 
         private static User LoggedInUser { get; }   
 
-        public ProfilePage()
+        public ProfilePage(User LoggedInUser)
         {
             this.InitializeComponent();
 
             using var db = new AppDbContext();
 
-            var currentUser = LoggedInUser; 
+            //LoggedInUser = currentUser; 
 
-            ProfileListView.ItemsSource = currentUser;
+            //nameTextBox.Text = currentUser.Name;
+            //badgesTextBox.Text = currentUser.Badges;
         }
 
         private void StatisticsNav_Click(object sender, RoutedEventArgs e)

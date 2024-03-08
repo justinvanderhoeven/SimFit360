@@ -31,24 +31,16 @@
             <TextBlock Padding="15,0,0,0" Text="Mijn Profiel" FontSize="50"/>
         </StackPanel>
 
-        <!--<ListView x:Name="ProfileListView" Padding="15,0,0,0" Grid.Column="2" Grid.Row="2">
+        <ListView x:Name="ProfileListView" Padding="15,0,0,0" Grid.Column="2" Grid.Row="2">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="localData:User">
                     <StackPanel>
-                        <TextBlock Text="{x:Bind Name}"/>
-                        <TextBlock Text="{x:Bind Badges}"/>
+                        <TextBlock x:Name="nameTextBox" Text="Naam van de gebruiker"/>
+                        <TextBlock x:Name="badgesTextBox" Text="Badges van de gebruiker"/>
                         <Button Background="#ed2e46" Click="StatisticsNav_Click">Bekijk je statistieken</Button>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>-->
-
-        <ListView x:Name="ProfileListView" Padding="15,0,0,0" Grid.Column="2" Grid.Row="2">
-            <StackPanel>
-                <TextBlock FontSize="18" Text="Hier staat je naam"/>
-                <TextBlock FontSize="18" Text="Hier je badges"/>
-                <Button Background="#ed2e46" Click="StatisticsNav_Click">Bekijk je statistieken</Button>
-            </StackPanel>
         </ListView>
     </Grid>
 </Page>

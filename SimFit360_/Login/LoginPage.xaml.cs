@@ -44,7 +44,7 @@ namespace SimFit360_.Login
                 if (user != null)
                 {
                     User.LoggedInUser = user;
-                    Frame.Navigate(typeof(MainPageTest));
+                    Frame.Navigate(typeof(ProfilePage));
                 }
                 else
                 {
